@@ -1,0 +1,262 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+body {
+  background: #dfeaec;
+}
+
+.navbar {
+  border: 5px;
+  background-color: rgb(110, 150, 150) !important;
+  border-radius: 0 0 5px 5px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 300;
+  color: white !important;
+  letter-spacing: 0.3px !important;
+}
+
+#logo {
+  color: white;
+  font-size: 35px;
+  font-family: 'Fontdiner Swanky', cursive;
+  font-weight: 100;
+  margin-right: 25px;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.btn2 {
+  background: rgb(110, 150, 150) !important;
+  color: white !important;
+  border: 1px solid #dfe2e5 !important;
+}
+
+.btn2:hover {
+  background: #fff !important;
+  color: rgb(110, 150, 150) !important;
+}
+
+.btn-outline-success2 {
+  color: white !important;
+  border: 1px solid #dfe2e5 !important;
+}
+
+.btn-outline-success2 .btn-lg:hover {
+  background: #fff !important;
+  color: rgb(110, 150, 150) !important;
+}
+
+#home-container {
+  margin-top: 25px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.jumbotron {
+  background-image: asset-url('485133727.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+#welcome-text {
+  color: rgb(107, 107, 107);
+}
+
+.nav-right {
+  float: right;
+  margin-left: 15px;
+}
+
+.nav-center {
+  display: inline-flex;
+}
+
+.sec-cntr {
+  text-align: center;
+}
+
+
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.text-to-center {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.flex-box {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.bgform {
+  color: black;
+  background-color: #f7f7f7;
+}
+
+.box-sh {
+  box-shadow: inset 0px 0px 1px 0px;
+}
+
+.navb {
+  color: rgb(110, 150, 150);
+}
+.navb:hover {
+  color: rgb(73, 100, 100);
+}
+
+.alert-danger {
+  background-color: white;
+  border-color: red;
+  color: red;
+  border-width: 1px;
+}
+
+.alert-success {
+  background-color: white;
+  border-color: green;
+  color: green;
+  border-width: 1px;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.gravatar {
+  margin-top: 25px;
+  display: block;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.mb {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* Pagination styling */
+
+.digg_pagination {
+  background: none;
+  cursor: default;
+  /* self-clearing method: */ 
+}
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.5em 1em;
+  display: block;
+  float: left;
+  margin-right: 2px; 
+}
+.digg_pagination .disabled {
+  font-size: 10px;
+  color: #999999;
+  border: 1px solid #dddddd; 
+}
+.digg_pagination .current {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+  background: rgb(110, 150, 150);
+  color: white;
+  border: 1px solid rgb(110, 150, 150); 
+  border-radius: 3px;
+}
+.digg_pagination a {
+  font-size: 10px;
+  text-decoration: none;
+  color: rgb(110, 150, 150);
+  border: 1px solid rgb(110, 150, 150); 
+  border-radius: 3px;
+}
+  .digg_pagination a:hover, .digg_pagination a:focus {
+    font-size: 10px;
+    color: #000033;
+    border-color: #000033; 
+    border-radius: 3px;
+  }
+.digg_pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center; 
+}
+.digg_pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em; 
+}
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; 
+}
+* html .digg_pagination {
+  height: 1%; 
+}
+*:first-child + html .digg_pagination {
+  overflow: hidden; 
+}
+
+.badge {
+  background-color: rgb(110, 150, 150);
+  margin-right: 5px;
+}
+
+.badge:hover {
+  background-color: rgb(76, 105, 105);
+}
+
+.badge a {
+  color: white !important;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.card-body a {
+  text-decoration: none;
+}

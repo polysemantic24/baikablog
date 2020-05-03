@@ -1,0 +1,20 @@
+<%= render 'shared/errors', obj: @category %>
+
+<%= form_with(model: @category, class: "shadow-sm p-3 mb-5 bgform rounded", local: true) do |f| %>
+
+  <div class="form-group row">
+    <%= f.label :category, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.text_field :name, class: "form-control box-sh rounded", placeholder: "Category name" %>
+    </div>
+  </div>
+
+  <div class="flex-box">
+    <%= f.submit class: "btn btn-outline-dark btn-lg" %>
+  </div>
+
+<% end %>
+
+<div class="mb-3">
+  <%= link_to '< Back', categories_path, class: "navb" %>
+</div>

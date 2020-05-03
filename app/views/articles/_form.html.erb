@@ -1,0 +1,33 @@
+<%= render 'shared/errors', obj: @article %>
+
+<%= form_with(model: @article, class: "shadow-sm p-3 mb-5 bgform rounded", local: true) do |f| %>
+
+  <div class="form-group row">
+    <%= f.label :title, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.text_field :title, class: "form-control box-sh rounded", placeholder: "Title of article" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= f.label :description, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.text_area :description, rows: 10, class: "form-control box-sh rounded", placeholder: "Description of article" %>
+    </div>
+  </div>
+
+  <div type="button" class="flex-box btn-group-toggle" data-toggle="buttons" aria-pressed="false" autocomplete="off">
+    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+      <% cb.label(class: "btn btn-info ml-1 mb-2") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+  </div>
+
+  <div class="flex-box">
+    <%= f.submit class: "btn btn-outline-dark btn-lg" %>
+  </div>
+
+<% end %>
+
+<div class="mb-3">
+  <%= link_to '< Back', articles_path, class: "navb" %>
+</div>

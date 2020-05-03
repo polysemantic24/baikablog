@@ -1,0 +1,13 @@
+<div class="container" id="page-content">
+  <h1 class="text-to-center">Articles</h1>
+
+  <div class="digg_pagination">
+    <%= will_paginate @articles, :container => false %>
+  </div>
+
+  <%= render 'article' %>
+
+  <div class="digg_pagination mb">
+    <%= will_paginate @articles, :container => false %>
+  </div>
+ </div> 

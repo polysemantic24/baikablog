@@ -1,0 +1,33 @@
+<div class="container" id="page-content">
+
+  <h1 class="text-to-center">Categories</h1>
+
+  <div class="digg_pagination">
+   <%= will_paginate @categories, :container => false %>
+  </div>
+
+  <% @categories.each do |category| %>
+
+    <div class="card text-center shadow-sm mb-5 bg-white rounded">
+      
+      <div class="card-body">
+
+        <h5 class="card-title"><%= link_to "#{category.name}", category_path(category), class: "text-info" %></h5>
+
+      </div>
+
+      <div class="card-footer text-muted">
+        <small>
+          <%= pluralize(category.articles.count, "article") %>
+        </small>
+      </div>
+
+    </div>
+
+  <% end %>
+
+  <div class="digg_pagination mb">
+    <%= will_paginate @categories, :container => false %>
+  </div>
+
+</div>
